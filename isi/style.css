@@ -384,7 +384,9 @@ span {
 
 
                  /* pendidikan */
-
+.pendidikan {
+    background-color: var(--bg-color);
+}
 .pendidikan h2 {
     font-size: 3rem;
     display: flex;
@@ -776,6 +778,7 @@ span {
 .kontak {
     min-height: auto;
     padding-bottom: 10rem;
+    background-color: var(--bg-color);
 }
 .kontak h2 {
     font-size: 3rem;
