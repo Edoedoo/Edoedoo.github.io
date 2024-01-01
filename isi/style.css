@@ -35,12 +35,12 @@ body {
 }
 
 
-            /* HEADER SETTING KESELURUHAN */
+              /* HEADER SETTING KESELURUHAN */
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     padding: .3rem 9%;
     background: transparent;
     display: flex;
@@ -885,7 +885,7 @@ span {
 
 
 
-            /* BREAKPOINTS */
+           /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
         font-size: 85%;
@@ -982,15 +982,218 @@ span {
         height: 38px;
     }
 }
-@media (max-width: 462px) {
+@media (max-width: 444px) {
     .home-content p {
         font-size: 85%;
     }
     .kontak form .input-box .input-field {
         width: 100%;
     }
-
+    body {
+        background: url('gambar1212.jpg') no-repeat;
+        color: var(--text-color);  
+    }
+        /* ANIMASI KEAHLIAN 1 */
+.morekeahlian1 {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 340px;
+    background: url(../keahlianvba/excelvba1.jpg);
+    border-radius: .6rem;
+    background-position: center;
+    background-size: cover;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    animation: keahlian1 10s linear infinite;
+}
+.morekeahlian1 .textkeahlian:hover {
+    color: var(--main-color);
+}
+.morekeahlian1 .textkeahlian:nth-child(2) {
+    background: trarensparent;
+    color: var(--main-color);
+}
+.morekeahlian1 .textkeahlian:nth-child(2):hover {
+    color: var(--main-color);
+}
+.morekeahlian1 .textkeahlian:nth-child(2)::before {
+    background: var(--main-color);
+}
+.morekeahlian1 .textkeahlian::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background : url(../keahlianvba/excelvba2.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: .5s;
+}
+.morekeahlian1 .textkeahlian:hover::before {
+    width: 100%;
+}
+            /* ANIMASI KEAHLIAN 2 */
+.morekeahlian2 {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 340px;
+    background: url(../keahlianfrontend/hcj1.jpg);
+    border-radius: .6rem;
+    background-position: center;
+    background-size: cover;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    animation: keahlian1 10s linear infinite;
+}
+.morekeahlian2 .textkeahlian:hover {
+    color: var(--main-color);
+}
+.morekeahlian2 .textkeahlian:nth-child(2) {
+    background: trarensparent;
+    color: var(--main-color);
+}
+.morekeahlian2 .textkeahlian:nth-child(2):hover {
+    color: var(--main-color);
+}
+.morekeahlian2 .textkeahlian:nth-child(2)::before {
+    background: var(--main-color);
+}
+.morekeahlian2 .textkeahlian::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background : url(../keahlianfrontend/hcj2.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: .5s;
+}
+.morekeahlian2 .textkeahlian:hover::before {
+    width: 100%;
+}
+            /* ANIMASI KEAHLIAN 3 */
+.morekeahlian3 {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 340px;
+    background: url(../keahlianeditor/editor1.jpg);
+    border-radius: .6rem;
+    background-position: center;
+    background-size: cover;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    animation: keahlian1 10s linear infinite;
+}
+.morekeahlian3 .textkeahlian:hover {
+    color: var(--main-color);
+}
+.morekeahlian3 .textkeahlian:nth-child(2) {
+    background: trarensparent;
+    color: var(--main-color);
+}
+.morekeahlian3 .textkeahlian:nth-child(2):hover {
+    color: var(--main-color);
+}
+.morekeahlian3 .textkeahlian:nth-child(2)::before {
+    background: var(--main-color);
+}
+.morekeahlian3 .textkeahlian::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background : url(../keahlianeditor/editor2.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: .5s;
+}
+.morekeahlian3 .textkeahlian:hover::before {
+    width: 100%;
+}
+            /* ANIMASI KEAHLIAN 4 */
+.morekeahlian4 {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 340px;
+    background: url(../keahlianotomotif/otomotif1.jpg);
+    border-radius: .6rem;
+    background-position: center;
+    background-size: cover;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    animation: keahlian1 10s linear infinite;
+}          
+.morekeahlian4 .textkeahlian:hover {
+    color: var(--main-color);
+}
+.morekeahlian4 .textkeahlian:nth-child(2) {
+    background: trarensparent;
+    color: var(--main-color);
+}
+.morekeahlian4 .textkeahlian:nth-child(2):hover {
+    color: var(--main-color);
+}
+.morekeahlian4 .textkeahlian:nth-child(2)::before {
+    background: var(--main-color);
+}
+.morekeahlian4 .textkeahlian::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background : url(../keahlianotomotif/otomotif2.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: .5s;
+}
+.morekeahlian4 .textkeahlian:hover::before {
+    width: 100%;
+}
     
+}
+@media (max-width: 378px) {
+    section {
+        min-height: 100vh;
+        padding: 1rem;
+    }
+  
+    .beranda {
+        display: flex;
+        position: relative;
+        align-items: flex;
+        flex-direction: column;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }   
+   
 }
 
             /* KEYFRAMES ANIMATION */
