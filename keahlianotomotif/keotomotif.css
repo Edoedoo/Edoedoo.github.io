@@ -1,0 +1,434 @@
+            /* SETTING TEXT */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+
+            /* PILIHAN WARNA  */
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62,5%;
+    overflow-x: hidden;
+}
+
+
+            /* SETTING BODY KESELURUHAN */
+body {    
+    background: rgb(46, 47, 48);
+    color: var(--text-color);
+}
+span {
+    color: rgb(176, 189, 64);
+}
+p {
+    margin: 1rem 0;
+}
+.exit {
+    top: 0;
+    padding-top: 5rem;
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-bottom: .1rem;
+    right: 3rem;
+    justify-content: center;
+    background-color:rgb(46, 47, 48);
+    position: fixed;
+    z-index: 99;
+}
+.exit h2 {
+    font: small;
+    color: #d0f83e;
+    top: 1.5rem;
+    right: 4.4rem;
+    justify-content: right;
+    position: fixed;
+    background: transparent;
+    /* border: 2px solid rgb(246, 255, 114);
+    border-radius: 1rem; */
+    height: 2.5rem;
+    width: 8rem;
+    padding: 10px;
+    display: flex;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 251, 0, 0.533)); */
+    animation: kembali 5s linear infinite;
+    z-index: 100;
+}
+.exit h2:hover {
+    height: 2.5rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    border-radius: 2rem;
+}
+.kotak-deskripsi { 
+    padding-top: 6rem;
+    text-align: center;
+    background: transparent;
+}
+
+.gambar-deskripsi {
+    position: relative;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    justify-content: center;
+    background: transparent;
+ 
+}
+.deskripsi {
+    padding-left: .3rem;
+    max-width: 50rem;
+    min-height: 10rem;
+    text-decoration: none;
+    text-align: left;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+/* .efek {
+    height: 500px;
+    width: 600px;
+    display: flex;
+    color: #00abf0;
+    background: brown;
+    border: .5rem solid green;
+    overflow: hidden;
+
+} */
+.deskripsikiri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    min-width: 400px;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+img {
+    content: '';
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+    z-index: 2;
+    animation: gambarsatu 10s linear infinite;
+}
+.deskripsikiri::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 150%;
+    background: linear-gradient(rgb(246, 255, 114), rgb(0, 0, 0));
+    animation: rotasi 10s linear infinite;
+}
+.deskripsikiri::after {
+    content: '';
+    position: absolute;
+    background:rgb(46, 47, 48);
+    inset: 5px;
+    border-radius: 20px;
+
+}
+.gambardeskripsi1 {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    background: url(gambardeskripsi1.png);
+    background-size: cover;
+    z-index: 99
+}
+.gambardeskripsi2 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background: url(gambardeskripsi2.png);
+    background-size: cover;
+    z-index: 99
+}
+.gpersen {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: left;
+    overflow: hidden;
+}
+.gpersen:hover::before{
+    content: '';
+    top: -12rem;
+    left: 0rem;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    height: 37rem;
+    background: linear-gradient(rgb(246, 255, 114), rgb(0, 0, 0));
+    animation: rotasi 5s linear infinite;
+}
+.gpersen::after {
+    content: '';
+    position: absolute;
+    background: rgb(46, 47, 48);
+    inset: 5px -5px;
+
+}
+.persen {
+    margin: 1rem 1rem;
+    position: relative;
+    text-align: center;
+    width: 15rem;
+    z-index: 99
+}
+.persen h4 {
+    color:  rgb(46, 47, 48);
+    background:rgb(176, 189, 64);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 100%
+}
+
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 85%;
+    }
+    .deskripsikiri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        min-width: 400px;
+        position: relative;
+        background: transparent;
+        border-radius: 20px;
+        overflow: hidden;
+    
+    }
+    img {
+        content: '';
+        position: relative;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px black;
+        z-index: 2;
+        animation: gambarsatu 10s linear infinite;
+    }
+    .deskripsikiri::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 150%;
+        background: linear-gradient(rgb(246, 255, 114), rgb(0, 0, 0));
+        animation: rotasi 5s linear infinite;
+    }
+    .deskripsikiri::after {
+        content: '';
+        position: absolute;
+        background: rgb(46, 47, 48);
+        inset: 5px;
+        border-radius: 20px;
+    
+    }
+}
+@media (max-width: 991px) {
+   html {
+    font-size: 75%;
+   }
+   .deskripsi {
+    max-width: 65rem;
+   }
+   .deskripsikiri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 250px;
+        min-width: 250px;
+        position: relative;
+        background: transparent;
+        border-radius: 20px;
+        overflow: hidden;
+    
+    }
+    img {
+        content: '';
+        position: relative;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px black;
+        z-index: 2;
+        animation: gambarsatu 10s linear infinite;
+    }
+    .deskripsikiri::before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150%;
+        background: linear-gradient(rgb(246, 255, 114), rgb(0, 0, 0));
+        animation: rotasi 5s linear infinite;
+    }
+    .deskripsikiri::after {
+        content: '';
+        position: absolute;
+        background: rgb(46, 47, 48);
+        inset: 5px;
+        border-radius: 20px;
+    
+    }
+}
+@media (max-width: 520px) {
+    html {
+        font-size: 65%;
+    }
+   .gambar-deskripsi {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    gap: .1rem;
+    padding: 0;
+    justify-content: center;
+    background: transparent;
+
+   }
+   .deskripsi {
+    padding-left:.2rem;
+    max-width: 50rem;
+    min-height: 10rem;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    color: rgb(255, 255, 255);
+   }
+   .deskripsikiri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    min-width: 250px;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+img {
+    content: '';
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+    z-index: 2;
+    animation: gambarsatu 10s linear infinite;
+}
+.deskripsikiri::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150%;
+    background: linear-gradient(rgb(246, 255, 114), rgb(0, 0, 0));
+    animation: rotasi 5s linear infinite;
+}
+.deskripsikiri::after {
+    content: '';
+    position: absolute;
+    background: rgb(46, 47, 48);
+    inset: 5px;
+    border-radius: 20px;
+}
+}
+@media (max-width: 462px) {
+   html {
+    font-size: 60%;
+   }
+   .deskripsi {
+    width: 39rem;
+   }
+    
+}
+@keyframes gambarsatu {
+    0% {
+        transform: rotate(0deg) scale(100%);
+       
+        
+    }
+    50% {
+        transform: rotate(180deg) scale(70%)
+
+    }
+    100% {
+        transform: rotate(360deg) scale(100%);
+        
+    }
+   
+}
+@keyframes gambardua {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+   
+}
+@keyframes rotasi {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kembali {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: #212222;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color: #fff;
+        box-shadow: 0 0 10px #2c2d2e,
+        0 0 20px #2c2d2e,
+        0 0 40px #2c2d2e,
+        0 0 80px #2c2d2e,
+        0 0 160px #2c2d2e,
+    }
+}

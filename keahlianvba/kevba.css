@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+   /* PILIHAN WARNA  */
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+html {
+    font-size: 62,5%;
+    overflow-x: hidden;
+}
+body {
+    margin-bottom: 10rem;
+    background: rgb(4, 19, 4);
+    color: var(--text-color);
+}
+span {
+    color: rgb(0, 133, 0);
+    
+}
+.exit {
+    top: 0;
+    padding-top: 5rem;
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-bottom: .1rem;
+    right: 3rem;
+    justify-content: center;
+    background-color: rgb(4, 19, 4);
+    position: fixed;
+}
+.exit h2 {
+    font: x-large;
+    color: #0e3742;
+    top: 1.5rem;
+    right: 4.4rem;
+    justify-content: right;
+    position: fixed;
+    background: transparent;
+    display: flex;
+    animation: kembali 5s linear infinite;
+    z-index: 100;
+}
+.exit h2:hover {
+    height: 2.5rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    border-radius: 2rem;
+}
+.kotak-deskripsi {
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    justify-content: center;
+    background-color: transparent;
+
+}
+.gambar {
+    position: relative;
+    margin-top: 5rem;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    background: url(pngexcel.png);
+    background-size: cover;
+    border: .2rem solid rgb(3, 92, 18);
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: .7em;
+    outline: none;
+    animation-name: animasigambar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    z-index: -1;
+}
+.deskripsi {
+    max-width: 50rem;
+    text-decoration: none;
+    text-align: left;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+.deskripsi h1 {
+    position: relative;
+    font-size: 2rem;
+    color: rgb(4, 90, 1);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    animation: vbaexcel 5s linear infinite;
+    z-index: -1;
+}
+.gpersen {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: left;
+    /* border: 2px solid red;
+    border-radius: 1rem; */
+    overflow: hidden;
+}
+.gpersen:hover::before{
+    content: '';
+    top: -12rem;
+    left: 0rem;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    height: 37rem;
+    background: linear-gradient(rgb(4, 90, 1), rgb(250, 250, 250));
+    animation: rotasi 5s linear infinite;
+}
+.gpersen::after {
+    content: '';
+    position: absolute;
+    background: rgb(4, 19, 4);
+    inset: 5px -5px;
+    /* border-radius: 20px; */
+
+}
+.persen {
+    margin: 1rem 1rem;
+    position: relative;
+    text-align: center;
+    width: 15rem;
+    z-index: 99
+}
+.persen h4 {
+    color: rgb(4, 19, 4);
+    background:rgb(4, 90, 1);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 100%
+}
+.deskripsi p {
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 10rem;
+}
+.gambardeskripsi {
+    position: relative;
+    display: flex;
+    height: 120px;
+    width: 270px;
+    text-align: center;
+    background: url(vbadeskripsi.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+h4 {
+    margin-bottom: 1rem;
+}
+.gambardeskripsi2 {
+    position: relative;
+    display: flex;
+    height: 120px;
+    width: 270px;
+    text-align: center;
+    background: url(vbadeskripsi2.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+.deskripsibawah {
+    height: 100%;
+    padding-left: 8rem;
+    padding-right: 2rem;
+    background-color: transparent;
+}
+.gambardeskripsi3 {
+    position: relative;
+    display: flex;
+    height: 120px;
+    width: 270px;
+    text-align: center;
+    background: url(vbadeskripsi3.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+.gambardeskripsi4 {
+    position: relative;
+    display: flex;
+    height: 120px;
+    width: 270px;
+    text-align: center;
+    background: url(vbadeskripsi4.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        margin: 1rem 1rem;
+        font-size: 85%;
+    }
+}
+@media (max-width: 991px) {
+    html {
+        margin: .5rem;
+        font-size: 70%;
+    }
+    
+}
+@media (max-width: 991px) {
+    .kotak-deskripsi {
+        height: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .gambar {
+        position: relative;
+        margin-top: 2rem;
+        height: 230px;
+        width: 230px;
+        display: flex;
+        background: url(pngexcel.png);
+        background-size: cover;
+        border: .2rem solid rgb(3, 92, 18);
+        text-transform: uppercase;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        line-height: .7em;
+        outline: none;
+        animation-name: animasigambar;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+        z-index: -1;
+    }
+    
+} 
+
+@media (max-width: 520px) {
+    html {
+        font-size: 65%;
+    }
+    .kotak-deskripsi {
+        height: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        background-color: transparent;
+        padding: 1rem;
+    }
+    .deskripsibawah {
+        height: 100%;
+        padding: 1rem;
+        background-color: transparent;
+    }
+    .gambar {
+        position: relative;
+        margin-top: 2rem;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        background: url(pngexcel.png);
+        background-size: cover;
+        border: .2rem solid rgb(3, 92, 18);
+        text-transform: uppercase;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        line-height: .2em;
+        outline: none;
+        animation-name: animasigambar;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+        z-index: -1;
+    }
+   
+}
+@media (max-width: 462px) {
+    html {
+        font-size: 55%;
+    }
+    .gambar {
+        position: relative;
+        margin-top: 2rem;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        background: url(pngexcel.png);
+        background-size: cover;
+        border: .2rem solid rgb(3, 92, 18);
+        text-transform: uppercase;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        line-height: .2em;
+        outline: none;
+        animation-name: animasigambar;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+        z-index: -1;
+    }
+   
+}
+                /* ANIMASI */
+@keyframes animasigambar {
+    0% {
+        opacity: 100%;
+        transform: scale(.9);
+    }
+    50% {
+        opacity: 35%;
+        transform: scale(1.1); 
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(.9);
+    } 
+}
+@keyframes rotasi {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kembali {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: rgb(3, 92, 18);
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color: #fff;
+        box-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+    }
+}
