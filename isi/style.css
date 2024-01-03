@@ -473,15 +473,20 @@ span {
     font-size: 3rem;
     text-align: center;
 }
-.keahlian {
+.keahlian1 {
     min-height: auto;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
+    background: var(--bg-color);
+}
+.keahlian2 {
+    min-height: auto;
+    padding-top: 3rem;
     background: var(--bg-color);
 }
 .keahlian h2 {
     margin-bottom: 2rem;
 }
-.keahlian .skills-row {
+.skills-row {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
@@ -996,6 +1001,33 @@ span {
     body {
         background: url('gambar1212.jpg') no-repeat;
         color: var(--text-color);  
+    }
+    .btn-box {
+        position: relative;
+        justify-content: space-between;
+        /* width: 30.3rem; */
+        height: 3rem;
+        animation: hubungi-tentang 10s linear infinite;
+    }
+    .btn-box .btn {
+        text-align: center;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: .2rem 0;
+        /* width: 12.2rem; */
+        height: 100%;
+        background: var(--main-color);
+        border: .2rem solid var(--main-color);
+        border-radius: .8rem;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: var(--bg-color);
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
     }
         /* ANIMASI KEAHLIAN 1 */
 .morekeahlian1 {
