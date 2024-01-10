@@ -164,7 +164,7 @@ section {
 .home-content .text-animasi {
     position: relative;
     top: 2rem;
-    width: 11rem;
+    width: 20.5rem;
     
 }
 .home-content .text-animasi h3 {
@@ -1265,7 +1265,7 @@ span {
             
 @keyframes homeBgText {
     0%, 10%, 100% {
-        background-position: -11rem 0;
+        background-position: -20.5rem 0;
     }
     65%, 85% {
         background-position: 0 0;
