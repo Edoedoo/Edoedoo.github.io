@@ -918,7 +918,9 @@ span {
     }
     .beranda {
         padding: 5 4%;
+background-position: right;
     }
+            
 }
 @media (max-width: 991px) {
     #menu-icon {
